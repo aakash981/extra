@@ -1,0 +1,704 @@
+<html>
+
+
+
+<title>Aakash Thakur</title>
+
+
+
+<meta charset="UTF-8">
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+
+
+
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+
+
+
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<link rel="stylesheet" href="css/typewriter.css">
+
+
+
+<style>
+
+
+
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+
+
+</style>
+
+
+
+<body class="w3-light-grey">
+
+
+
+
+
+
+
+<!-- Page Container -->
+
+
+
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+
+
+
+
+
+
+  <!-- The Grid -->
+
+
+
+  <div class="w3-row-padding">
+
+
+
+  
+
+
+
+    <!-- Left Column -->
+
+
+
+    <div class="w3-third">
+
+
+
+    
+
+
+
+      <div class="w3-white w3-text-grey w3-card-4">
+
+
+
+        <div class="w3-display-container">
+
+
+
+          <img src="img.jpeg" style="width:100%" alt="Avatar">
+
+
+
+       
+
+
+
+        </div>
+
+
+
+        <div class="w3-container">
+
+
+
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Intern at Cognizant Technology Solutions</p>
+
+
+
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Pune, India</p>
+
+
+
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>aakasht81@gmail.com</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>Aakash.Thakur@cognizant.com</p>
+
+
+
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+91-9816513801</p>
+
+
+
+          <hr>
+
+
+
+
+
+
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+
+
+
+          <p>Java</p>
+
+
+
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+
+
+
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:85%">70%</div>
+
+
+
+          </div>
+
+
+
+          
+
+
+
+          <p>C</p>
+
+
+
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+
+
+
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+
+
+
+          </div>
+
+
+
+          <p>MySql</p>
+
+
+
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+
+
+
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">70%</div>
+
+
+
+          </div>
+
+
+
+ <p>HTML(including CSS & Bootstrap)</p>
+
+
+
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+
+
+
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">70%</div>
+
+
+
+          </div>
+
+
+
+          <p>Php</p>
+
+
+
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+
+
+
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">
+
+
+
+              <div class="w3-center w3-text-white">70%</div>
+
+
+
+            </div>
+
+
+
+          </div>
+
+
+
+ <p>R</p>
+
+
+
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+
+
+
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">
+
+
+
+              <div class="w3-center w3-text-white">60%</div>
+
+
+
+            </div>
+
+
+
+          </div>
+
+
+
+          <br>
+
+
+
+
+
+
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Miscellaneous Technical Experience</b></p>
+
+
+
+          <p>Hybrid Appication Development with Phonegap</p>
+
+
+
+          <div class="w3-light-grey w3-round-xlarge">
+
+
+
+            
+
+
+
+
+
+
+
+          
+
+
+
+        </div>
+
+
+
+          <p>Data Analysis and Prediction(Using :R,Python,Weka,Rapidminer)</p>
+
+
+
+          <div class="w3-light-grey w3-round-xlarge">
+
+
+
+           
+
+
+
+          </div>
+
+
+
+          <p>Cerified Ethical Hacking (Entry Level)</p>
+
+
+
+          <div class="w3-light-grey w3-round-xlarge">
+
+
+
+           
+
+
+
+          </div>
+
+
+
+          <br>
+
+
+
+        </div>
+
+
+
+      </div><br>
+
+
+
+
+
+
+
+    <!-- End Left Column -->
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Right Column -->
+
+
+
+    <div class="w3-twothird">
+
+
+
+<div class="w3-container w3-card w3-white w3-margin-bottom">
+
+
+
+<div class="w3-container w3-card w3-white w3-margin-bottom">
+
+
+
+ <div class="typewriter">
+
+
+
+ <h1>Nishant Maurya</h1>
+
+
+
+</div>
+
+
+
+
+
+
+
+ <div class="typewriter">
+
+
+
+ <h2>Emerging Full Stack Developer</h1>
+
+
+
+</div>
+
+
+
+<p class="lead>"<blockquote class="blockquote">
+
+
+
+Hi there, I am Nishant Maurya currently working as Intern at Cognizant Technology Solutions with experience in C,C++,Java,Web Development(Design and Back-End),Python(Data Science). 
+
+
+
+A positive-minded person with the will to gain expertise in Software Developmnent and work on latest technologies.I keep myself updated with the latest technologies in the market, and try to gain experience in them. 
+
+
+
+I am a straight-forward and practical person and have a great expectation for result of my work.A positive-minded person who loves to deal 
+
+
+
+with difficult tasks.I want to work where my skills and my performance add values to the organization.</blockquote> </p> 
+
+
+
+    
+
+
+
+
+
+
+
+</div>    
+
+
+
+    
+
+
+
+    
+
+
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+
+
+
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
+
+
+
+        <div class="w3-container">
+
+
+
+      <h4 class="w3-text-grey w3-padding-14"><i class="fa fa-suitcase fa-fw w3-margin-right w3-large w3-text-tea"></i><b>E-Creditzz (Android App)  </b></h4>
+
+
+
+      <ul class="list-group">
+
+        
+
+            <li><b>Technologies Used: Java, MySQl, Php</b></li>
+
+            <li> Developed an Android application to manage the dues or credit of customer on any shop.</li>
+
+            <li> Shopkeeper would be able to scan customer’s barcode and add or deduct dues in their account.</li>
+
+            <li>Facilitates Synchronization between customer and vendor app.</li>
+
+
+
+          </ul>
+
+
+
+<h4 class="w3-text-grey w3-padding-14"><i class="fa fa-suitcase fa-fw w3-margin-right w3-large w3-text-tea"></i><b>Studygeekshub-Ultimate Study Companion (Website) </b></h4>
+
+<ul class="list-group">
+
+  <li><b>Technologies Used: Html, CSS, Bootstrap, Php, MySQL</b></li>
+
+  <li>An E-Learning Website that provides all study materials at the same place.</li>
+
+  <li>Modules like MCQs Page, Tutorials and Discussion Forums were used.</li>
+
+   <li>Admin Panel for updating or adding new course,questions.</li>
+
+   <li>User Login with Dashboard for user's saved courses and questions asked or answered in the discussion forum.</li>
+
+</ul>
+
+<h4 class="w3-text-grey w3-padding-14"><i class="fa fa-suitcase fa-fw w3-margin-right w3-large w3-text-tea"></i><b>Decision Support System for Restaurant Data</b></h4>
+
+
+
+</div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+
+
+
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+
+
+
+        <div class="w3-container">
+
+
+
+      <h4 class="w3-text-grey w3-padding-14"><i class="fa fa-university fa-fw w3-margin-right w3-xlarge w3-text-teal"></i><b>Lovely Professional University</b></h4>
+
+
+
+          <h5 class="w3-opacity"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>Master Of Computer Applications(Hons.)</h5>
+
+
+
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-tag w3-teal w3-round">Pursuing </span> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;<i class="fas fa-folder-minus"></i>Domain : Big Data</h6>
+
+
+
+         <h5 class="w3-opacity"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>Bachelor Of Computer Applications</h5>
+
+
+
+         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014-2017  &emsp; &emsp; <span class="w3-tag w3-teal w3-round">78.3</span><i class="fa fa-percent fa-fw w3-margin-middle"></i>&emsp; &emsp;</span><i class="fas fa-folder-minus"></i>Domain : Software Engineering</h6>
+
+
+
+   
+
+
+
+          
+
+
+
+          <hr>
+
+
+
+        </div>
+
+
+
+
+
+
+
+<div class="w3-container">
+
+
+
+      <h4 class="w3-text-grey w3-padding-14"><i class="fa fa-university fa-fw w3-margin-right w3-xlarge w3-text-teal"></i><b>Gorakhpur Public School</b></h4>
+
+
+
+          <h5 class="w3-opacity"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>CBSE-XII</h5>
+
+
+
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011-2013    &emsp; &emsp;<span class="w3-tag w3-teal w3-round">62.6</span><i class="fa fa-percent fa-fw w3-margin-middle"></i></h6>
+
+
+
+
+
+
+
+         <h5 class="w3-opacity"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>CBSE-X</h5>
+
+
+
+         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010-2011    &emsp; &emsp;<span class="w3-tag w3-teal w3-round">86.5</span><i class="fa fa-percent fa-fw w3-margin-middle"></i></h6>
+
+
+
+    
+
+
+
+          
+
+
+
+          <hr>
+
+
+
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+    <!-- End Right Column -->
+
+
+
+    </div>
+
+
+
+    
+
+
+
+  <!-- End Grid -->
+
+
+
+  </div>
+
+
+
+  
+
+
+
+  <!-- End Page Container -->
+
+
+
+</div>
+
+
+
+
+
+
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+
+
+
+  <p>Find me on social media.</p>
+
+
+
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+
+
+
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+
+
+
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+
+
+
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+
+
+
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+
+
+
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+
+
+
+ 
+
+
+
+</footer>
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
