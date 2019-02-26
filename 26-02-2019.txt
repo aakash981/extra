@@ -1,0 +1,258 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter String in this format(YYYY-MM-DD HH:mm:ss)");
+            string a = Console.ReadLine();
+        DateTime dt = DateTime.ParseExact(a, "yyyy-MM-dd HH:mm:ss", null); 
+            
+            UserMainCode.DisplayDateTime(dt); 
+          
+            Console.ReadKey();
+            //UserMainCode.DisplayDateTime(dt);
+        }
+    }
+}
+public class UserMainCode
+{
+    public static void DisplayDateTime(DateTime d)
+    {
+
+        Console.WriteLine(d.ToString("dd/MM/yyyy, H:mm:ss"));
+
+
+    }
+
+}
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+				day of year
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string a = Console.ReadLine();
+        DateTime dt = DateTime.ParseExact(a, "yyyy-MM-dd", null);
+            //2013-03-23
+        UserMainCode.DisplayDay(dt); 
+          
+            Console.ReadKey();
+            //UserMainCode.DisplayDateTime(dt);
+        }
+    }
+}
+public class UserMainCode
+{
+    public static void DisplayDay(DateTime d)
+    {
+
+        Console.WriteLine("Day of year : " + d.DayOfYear);
+
+
+    }
+
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+				name of day
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string a = Console.ReadLine();
+        DateTime dt = DateTime.ParseExact(a, "yyyy-MM-dd", null);
+            //2013-03-23
+        UserMainCode.DisplayDay(dt); 
+          
+            Console.ReadKey();
+            //UserMainCode.DisplayDateTime(dt);
+        }
+    }
+}
+public class UserMainCode
+{
+    public static void DisplayDay(DateTime d)
+    {
+       // 2011-10-21
+        Console.WriteLine(d.ToString("dddd"));
+
+
+    }
+
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                 before and after year
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string a = Console.ReadLine();
+        DateTime dt = DateTime.ParseExact(a, "yyyy-MM-dd", null);
+            //2013-03-23
+        UserMainCode.DisplayDateDetails(dt); 
+          
+            Console.ReadKey();
+            //UserMainCode.DisplayDateTime(dt);
+        }
+    }
+}
+public class UserMainCode
+{
+    public static void DisplayDateDetails(DateTime d)
+    {
+       // 2011-10-21
+        Console.WriteLine(d.AddYears(+1).ToString("yyyy-MM-dd"));
+        Console.WriteLine(d.AddYears(-1).ToString("yyyy-MM-dd"));
+        
+
+
+    }
+
+}
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                    first and last day of month
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            UserMainCode.Display();
+        }
+    }
+}
+  class UserMainCode
+    {
+        public static void Display()
+        {
+
+            int year = Convert.ToInt32(Console.ReadLine());
+            int month = Convert.ToInt32(Console.ReadLine());
+
+            DateTime d = new DateTime(year,month,1);
+            Console.WriteLine(d.DayOfWeek);
+
+
+            DateTime d2 = d.AddMonths(1).AddDays(-1);
+            Console.WriteLine(d2.DayOfWeek);
+            Console.ReadLine();
+        }
+    }
+
+// 2017-10-23 2015-10-23 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+					start and end year
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            UserMainCode.DisplayDay();
+        }
+    }
+}
+  class UserMainCode
+    {
+      public static void DisplayDay()
+        {
+            Console.WriteLine("Enter the year");
+            int year = Convert.ToInt32(Console.ReadLine());
+        //    int month = Convert.ToInt32(Console.ReadLine());
+
+            DateTime d = new DateTime(year,01,1);
+            Console.WriteLine("Start Day of the given year is " + d.DayOfWeek);
+
+
+            DateTime d2 = d.AddYears(1).AddDays(-1);
+            Console.WriteLine("End Day of the given year is " + d2.DayOfWeek);
+            Console.ReadLine();
+        }
+    }
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5601599	712	Difference between two years	26/02/2019 03:29	Accepted	0.2	5601599	712	Difference between two years	26/02/2019 03:29	Accepted	0.2	5601599	712	Difference between two years	26/02/2019 03:29	Accepted	0.2
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            UserMainCode.DisplayDateDetails();
+        }
+    }
+}
+  class UserMainCode
+    {
+      public static void DisplayDateDetails()
+        {
+            string a = Console.ReadLine();
+            DateTime dt = DateTime.ParseExact(a, "yyyy-MM-dd", null);
+            string b = Console.ReadLine();
+            DateTime dt1 = DateTime.ParseExact(b, "yyyy-MM-dd", null);
+
+            TimeSpan ts = (dt1 - dt);
+            int y = ts.Days / 365;
+            int m = (ts.Days % 365) / 31;
+
+            Console.WriteLine("Difference between " + a + " and " + b + ": " + y + " Years and " + m + " Months");
+
+
+             Console.ReadLine();
+        }
+    }
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
