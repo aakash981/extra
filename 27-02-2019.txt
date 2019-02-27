@@ -1,0 +1,313 @@
+                     year difff
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication7
+{
+     class Program
+    {
+        static void Main(string[] args)
+        {
+            UserMainCode.DisplayAge();
+        }
+    }
+}
+  class UserMainCode
+    {
+      public static void DisplayAge()
+        {
+            string a = Console.ReadLine();
+            DateTime dt = DateTime.ParseExact(a, "yyyy-MM-dd", null);
+            string b = Console.ReadLine();
+            DateTime dt1 = DateTime.ParseExact(b, "yyyy-MM-dd", null);
+
+            TimeSpan ts = (dt1 - dt);
+            int y = ts.Days / 365;
+            int m = (ts.Days % 365) / 31;
+            int d =  ((ts.Days%365)%31);
+
+            Console.WriteLine( y + " Years " + m + " months "+d +" days");
+
+
+             Console.ReadLine();
+        }
+    }
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5606992	380	Days After and Before	27/02/2019 10:51	Accepted	0.2
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string a = Console.ReadLine();
+            DateTime dt = DateTime.ParseExact(a, "yyyy-MM-dd", null);
+
+            UserMainCode.DisplayDay(dt);
+
+            Console.ReadKey();
+            //UserMainCode.DisplayDateTime(dt);
+        }
+    }
+}
+public class UserMainCode
+{
+    public static void DisplayDay(DateTime d)
+    {
+        // 2011-10-21
+        Console.WriteLine(d.AddDays(-10).ToString("yyyy-MM-dd"));
+        DateTime x2 = d.AddDays(-10);
+        Console.WriteLine(x2.DayOfWeek);
+
+        Console.WriteLine(d.AddDays(+10).ToString("yyyy-MM-dd"));
+        DateTime x1 = d.AddDays(10);
+        Console.WriteLine(x1.DayOfWeek);
+       
+
+
+    }
+
+}
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+			time +2
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string a = Console.ReadLine();
+            DateTime dt = DateTime.ParseExact(a, "HH:mm:ss", null);
+
+            UserMainCode.DisplayTime(dt);
+
+            Console.ReadKey();
+            //UserMainCode.DisplayDateTime(dt);
+        }
+    }
+}
+public class UserMainCode
+{
+    public static void DisplayTime(DateTime d)
+    {
+
+        DateTime d1 = d.AddHours(2);
+        Console.WriteLine(d1.ToString("HH:mm:ss"));
+        
+
+
+    }
+
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5606992	397	Display Day of the Year	27/02/2019 11:57	Accepted	0.2	5606992	397	Display Day of the Year	27/02/2019 11:57	Accepted	0.2
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = Convert.ToInt32(Console.ReadLine());
+
+            int b = Convert.ToInt32(Console.ReadLine());
+            DateTime dt = new DateTime(a,01,01);
+            
+            
+            //   100th day of 2014 : 2014-04-10
+            //  DateTime dt = DateTime.ParseExact(a, "HH:mm:ss", null);
+            UserMainCode.DisplayDateTime(dt,b,a);
+
+            Console.ReadKey();
+            //UserMainCode.DisplayDateTime(dt);
+        }
+    }
+}
+public class UserMainCode
+{
+    public static void DisplayDateTime(DateTime d,int r,int a)
+    {
+
+
+
+        DateTime d1 = d.AddDays(r-1);
+        string u= (d1.ToString("yyyy-MM-dd"));
+        Console.WriteLine(r+"th day of "+a+" : "+u);
+        
+        //2014-04-10  100th day of 2014 : 2014-04-10
+
+
+    }
+
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5606992	417	Date before months	27/02/2019 02:31	Accepted	0.2	5606992	417	Date before months	27/02/2019 02:31	Accepted	0.2	5606992	417	Date before months	27/02/2019 02:31	Accepted	0.2
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string a =Console.ReadLine();
+            DateTime dt = DateTime.ParseExact(a, "yyyy-MM-dd", null);//YYYY-MM-DD 
+            UserMainCode.DisplayDate(dt,a);
+
+            Console.ReadKey();
+        }
+    }
+}
+public class UserMainCode
+{
+    public static void DisplayDate(DateTime d,string i)
+    {
+
+
+
+        DateTime d1 = d.AddMonths(-20);
+        string o = d1.ToString("yyyy-MM-dd");
+        Console.WriteLine("20 months before " + i + " will be " + o);
+        
+       // 20 months before 2014-04-28 will be 2012-08-28
+
+
+    }
+
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5606992	442	Leap Year	27/02/2019 03:37	Accepted	0.2	5606992	442	Leap Year	27/02/2019 03:37	Accepted	0.2	5606992	442	Leap Year	27/02/2019 03:37	Accepted	0.2	5606992	442	Leap Year	27/02/2019 03:37	Accepted	0.2	5606992	442	Leap Year	27/02/2019 03:37	Accepted	0.2
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the year");
+            int a =Convert.ToInt32(Console.ReadLine());
+            DateTime dt = new DateTime(a, 01, 01);
+            //DateTime dt = DateTime.ParseExact(a, "yyyy-MM-dd", null);//YYYY-MM-DD 
+            UserMainCode.DisplayYear(a);
+
+            Console.ReadKey();
+        }
+    }
+}
+public class UserMainCode
+{
+    public static void DisplayYear(int d)
+    {
+
+
+        if ((d % 4 == 0 && d % 100 != 0) || (d % 400 == 0))
+        {
+            Console.WriteLine("{0} is a leap year", d);
+        }
+        else
+        {
+            Console.WriteLine("{0} is not a leap year", d);
+        }
+        Console.ReadLine();
+
+        
+       // 20 months before 2014-04-28 will be 2012-08-28
+
+
+    }
+
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5606992	547	Number Of Sundays	27/02/2019 05:36	Accepted	0.2
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+          //  Console.WriteLine("Enter the year");
+            string a = Console.ReadLine();
+            string b = Console.ReadLine();
+            //DateTime dt = new DateTime(a, 01, 01);
+            DateTime dt = DateTime.ParseExact(a, "yyyy-MM-d", null);
+            DateTime dt1 = DateTime.ParseExact(b, "yyyy-MM-d", null);//YYYY-MM-DD 
+            UserMainCode.DisplayDay(dt, dt1);
+
+            Console.ReadKey();
+        }
+    }
+}
+public class UserMainCode
+{
+    public static void DisplayDay(DateTime d, DateTime d1)
+    {
+
+        int yu=0;
+        for (DateTime i=d; i <= d1; i=i.AddDays(1)) {
+        //    Console.WriteLine(i.DayOfWeek);
+            if (i.DayOfWeek== DayOfWeek.Sunday)
+            {
+
+                yu++;
+            }   // Console.WriteLine(i);
+        
+
+            }
+            //else { Console.WriteLine("nothing"); }
+
+        
+        //TimeSpan ts = (d1 - d);
+        //string ok = ts.ToString("dd");
+        //float ok1 = float.Parse(ok);
+        //int qw =Convert.ToInt32(Math.Round(ok1/7)); 
+        //int qw = Convert.ToInt32(ok1);
+        //int qwe = Math.Round(qw);
+        Console.WriteLine(yu);
+
+        
+       // 20 months before 2014-04-28 will be 2012-08-28
+
+
+    }
+
+}
