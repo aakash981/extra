@@ -1,4 +1,4 @@
-							Next and Previous Friday
+	i am doing this						Next and Previous Friday
 
 using System;
 using System.Collections.Generic;
