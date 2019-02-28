@@ -1,5 +1,64 @@
+							Next and Previous Friday
 
-						Difference between two years
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Date_API_S2_Q1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string s = Console.ReadLine();
+            DateTime dt = DateTime.ParseExact(s,"yyyy-MM-dd",null);
+            UserMainCode.DisplayDate(dt);
+            Console.ReadKey();
+        }
+    }
+}
+class UserMainCode
+{
+    public static void DisplayDate(DateTime dt)
+    {
+        if (dt.DayOfWeek == DayOfWeek.Monday)
+        {
+            Console.WriteLine("Next Friday : "+dt.AddDays(4).ToString("yyyy-MM-dd"));
+            Console.WriteLine("Previous Friday : " + dt.AddDays(-3).ToString("yyyy-MM-dd"));
+        }
+        else if (dt.DayOfWeek == DayOfWeek.Tuesday)
+        {
+            Console.WriteLine("Next Friday : " + dt.AddDays(3).ToString("yyyy-MM-dd"));
+            Console.WriteLine("Previous Friday : " + dt.AddDays(-4).ToString("yyyy-MM-dd"));
+        }
+        else if (dt.DayOfWeek == DayOfWeek.Wednesday)
+        {
+            Console.WriteLine("Next Friday : " + dt.AddDays(2).ToString("yyyy-MM-dd"));
+            Console.WriteLine("Previous Friday : " + dt.AddDays(-5).ToString("yyyy-MM-dd"));
+        }
+        else if (dt.DayOfWeek == DayOfWeek.Thursday)
+        {
+            Console.WriteLine("Next Friday : " + dt.AddDays(1).ToString("yyyy-MM-dd"));
+            Console.WriteLine("Previous Friday : " + dt.AddDays(-6).ToString("yyyy-MM-dd"));
+        }
+        else if (dt.DayOfWeek == DayOfWeek.Saturday)
+        {
+            Console.WriteLine("Next Friday : " + dt.AddDays(6).ToString("yyyy-MM-dd"));
+            Console.WriteLine("Previous Friday : " + dt.AddDays(-1).ToString("yyyy-MM-dd"));
+        }
+        else
+        {
+            Console.WriteLine("Next Friday : " + dt.AddDays(5).ToString("yyyy-MM-dd"));
+            Console.WriteLine("Previous Friday : " + dt.AddDays(-2).ToString("yyyy-MM-dd"));
+        }
+        
+    }
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+								Calculate Age
 
 using System;
 using System.Collections.Generic;
