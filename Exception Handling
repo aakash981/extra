@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace inh
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Trying to invoke a no-argument constructor (that is not available) using CreateInstance method\nException Occured : MissingMethodException");
+            Console.WriteLine("Enter name of the player");
+            string a = Console.ReadLine();
+            Console.WriteLine("Enter country of the player");
+            string b = Console.ReadLine();
+            Console.WriteLine("Enter skillset of the player");
+            string c = Console.ReadLine();
+          
+                Player p = new Player();
+                p.Name = a;
+                p.Country = b;
+                p.Skill = c;
+                Console.WriteLine(p.Name+","+p.Country+","+p.Skill);
+            
+            Console.ReadKey();
+        }
+    }
+}
+class Player {
+    private string _name;
+
+    public string Name
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
+    private string _country;
+
+    public string Country
+    {
+        get { return _country; }
+        set { _country = value; }
+    }
+    private string _skill;
+
+    public string Skill
+    {
+        get { return _skill; }
+        set { _skill = value; }
+    }
+
+
+}
