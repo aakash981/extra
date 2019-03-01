@@ -1,0 +1,101 @@
+ques 1 session 1
+****************************************************************
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+public class Shape
+ {
+    protected string _shapeName;
+
+    public Shape()
+    {}
+   
+ }
+
+class Square : Shape
+{
+    int _side;
+    
+    public Square(int n) 
+    {
+    _side = n;
+    _shapeName= "Square";
+    }
+    public double CalculateArea()
+    {
+        double result;
+        result =((double) (_side * _side));
+        return result;
+    }
+}
+
+class Rectangle : Shape
+{
+    int _length, _breadth;
+    public Rectangle(int l, int b)
+    {
+        _length = l;
+        _breadth=b;
+        _shapeName = "Rectangle";
+    }
+    public double CalculateArea()
+    {
+        double result;
+        result = ((double)(_length * _breadth));
+        return result;
+    }
+}
+class Circle : Shape
+{
+    int _radius;
+    public Circle(int r)
+    {
+        _radius = r;
+        _shapeName = "Circle";
+    }
+    public double CalculateArea()
+    {
+        double result;
+        result = (Math.PI*_radius * _radius);
+        return result;
+    }
+}
+
+class Program
+{
+    
+    
+   static void Main(string[] args)
+    {
+        Console.WriteLine("1. Rectangle\n2. Square\n3. Circle\nArea Calculator --- Choose your shape");
+        int choice = Convert.ToInt32(Console.ReadLine());
+        switch (choice)
+        {
+            case 1:
+                Console.WriteLine("Enter length and breadth:");
+                int a = Convert.ToInt32(Console.ReadLine());
+                int b = Convert.ToInt32(Console.ReadLine());
+                Rectangle rec = new Rectangle(a,b);
+                Console.WriteLine("Area of Rectangle is:{0:0.00}" ,rec.CalculateArea());
+                break;
+            case 2:
+                Console.WriteLine("Enter side:");
+                int c = Convert.ToInt32(Console.ReadLine());              
+                Square sq = new Square(c);
+                Console.WriteLine("Area of square is:{0:0.00}",sq.CalculateArea());
+                break;
+            case 3:
+                Console.WriteLine("Enter Radius:");
+                int d = Convert.ToInt32(Console.ReadLine());
+                Circle circle = new Circle(d);
+                Console.WriteLine("Area of Circle is:{0:0.00}",circle.CalculateArea());
+                break; 
+        }
+        Console.ReadLine();
+    }
+ }
+
+*****************************************************************************************
