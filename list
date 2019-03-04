@@ -1,0 +1,283 @@
+***************************************************1*****************************************************
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Collections_Generics_S1_Q1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = Convert.ToInt32(Console.ReadLine());
+            List<int> l=new List<int>();
+            int sum = 0;
+            for (int i = 0; i < n; i++)
+            {
+                l.Add(Convert.ToInt32(Console.ReadLine()));    
+            }
+            sum = l.Sum();
+            float avg = ((float)sum /(float) n); 
+            Console.WriteLine(sum);
+            Console.WriteLine("{0:0.0}",avg);
+            Console.ReadKey();
+
+        }
+    }
+}
+**************************************************************2****************************************************************
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Generics_List_S1_Q2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = Convert.ToInt32(Console.ReadLine());
+            List<int> l = new List<int>();
+            for (int i = 0; i < n; i++)
+            {
+                l.Add(Convert.ToInt32(Console.ReadLine()));
+            }
+            l.Sort();
+            foreach (int i in l)
+            {
+                Console.WriteLine(i);
+            }
+            Console.ReadKey();
+        }
+    }
+}
+**************************************************************3*************************************************************
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Collections_List_S1_Q3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = Convert.ToInt32(Console.ReadLine());
+            List<string> l = new List<string>();
+            for (int i = 0; i < n; i++)
+            {
+                l.Add(Console.ReadLine());
+            }
+            string s = Console.ReadLine();
+            int count=0;
+            l.ToArray();
+            for (int i = 0; i < n; i++)
+            {
+                if (s.Equals(l[i]))
+                    count++;
+            }
+            Console.WriteLine(count);
+            Console.ReadKey();
+        }
+    }
+}
+*******************************************************************4*******************************************************
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Collections_List_S1_Q4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the team name");
+            string teamName = Console.ReadLine();
+            Console.WriteLine("Enter the number of matches played in home ground");
+            int hgr = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the runs scored");
+            List<int> l1 = new List<int>();
+            for (int i = 0; i < hgr; i++)
+            {
+                l1.Add(Convert.ToInt32(Console.ReadLine()));
+            }
+            Console.WriteLine("Enter the number of matches played in other ground");
+            int ogr = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the runs scored");
+            List<int> l2 = new List<int>();
+            for (int i = 0; i < ogr; i++)
+            {
+                l2.Add(Convert.ToInt32(Console.ReadLine()));
+            }
+            Console.WriteLine("Runs scored by {0}",teamName);
+            List<int> combined = l1.Concat(l2).ToList();
+            foreach (int s in combined)
+            {
+                Console.WriteLine(s);
+            }
+            Console.WriteLine("Run scored by {0} more than 300",teamName);
+            for (int i = 0; i < combined.Count(); i++)
+            {
+                if (combined.ElementAt(i) > 300)
+                    Console.WriteLine(combined[i]);
+            }
+            Console.ReadKey();
+        }
+    }
+}
+*****************************************************************5**********************************************************
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Collections_List_S1_Q5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the top 5 scorers of IPL Season 8");
+            List<string> l1 = new List<string>();
+            for (int i = 0; i < 5; i++)
+            {
+                l1.Add(Console.ReadLine());
+            }
+            Console.WriteLine("Enter the top 5 scorers of IPL Season 9");
+            List<string> l2 = new List<string>();
+            for (int i = 0; i < 5; i++)
+            {
+                l2.Add(Console.ReadLine());
+            }
+            List<string> l3 = l1.Intersect(l2).ToList();
+            Console.WriteLine("Consistent run scorers");
+            foreach (string s in l3)
+            {
+                Console.WriteLine(s);
+            }
+            Console.ReadKey();
+        }
+    }
+}
+*****************************************************6***********************************************************************
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Collection_List_S1_Q6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter the teams in ranking table");
+            List<string> list = new List<string>();
+            for (int i = 0; i < 5; i++)
+            {
+                list.Add(Console.ReadLine());
+            }
+            Console.WriteLine("Enter the rank to be searched");
+            int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(list.ElementAt(n-1));
+            Console.ReadKey();
+        }
+    }
+}
+***************************************************************7********************************************************
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Collections_List_S1_Q7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> list = new List<string>();
+            for (int i = 0; i < 5; i++)
+            {
+                list.Add(Console.ReadLine());
+            }
+            Console.WriteLine("Enter swap positons");
+            int n1 = Convert.ToInt32(Console.ReadLine());
+            int n2 = Convert.ToInt32(Console.ReadLine());
+            Swap(list,n1,n2);
+            foreach (string s in list)
+            {
+                Console.WriteLine(s);
+            }
+            Console.ReadKey();
+        }
+        public static void Swap<T>(IList<T> list, int indexA, int indexB)
+        {
+            T tmp = list[indexA];
+            list[indexA] = list[indexB];
+            list[indexB] = tmp;
+        }
+    }
+    
+}
+****************************************************8******************************************************
+using System;
+using System.Collections;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Collections_List_S1_Q8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ArrayList list = new ArrayList();
+            Console.WriteLine("Enter the player details");
+            Console.WriteLine("Enter player name");
+            list.Add(Console.ReadLine());
+            Console.WriteLine("Enter age");
+            list.Add(Convert.ToInt32(Console.ReadLine()));
+            Console.WriteLine("Enter Country");
+            list.Add(Console.ReadLine());
+            Console.WriteLine("Player Details");
+            foreach (object o in list)
+            {
+                Console.WriteLine(o);
+            }
+            Console.WriteLine("Enter Skill");
+            string s = Console.ReadLine();
+            Console.WriteLine("Enter the position to add the skill");
+            int n1 = Convert.ToInt32(Console.ReadLine());
+            list.Insert(n1,s);
+            Console.WriteLine("Player Details");
+            foreach (object o in list)
+            {
+                Console.WriteLine(o);
+            }
+            Console.WriteLine("Enter the position of the detail to be removed");
+            int n2 = Convert.ToInt32(Console.ReadLine());
+            list.RemoveAt(n2);
+            Console.WriteLine("Player Details");
+            foreach (object o in list)
+            {
+                Console.WriteLine(o);
+            }
+            Console.ReadKey();
+        }
+    }
+}
+
