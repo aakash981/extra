@@ -1,0 +1,77 @@
+namespace ConsoleApplication7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n;
+            string answer;
+            SortedSet<Revenue> ss=new SortedSet<Revenue>();
+            Revenue rev;
+            int sum=0;
+            do
+            {
+                Console.WriteLine("Enter revenue category");
+                string str = Console.ReadLine();
+                Console.WriteLine("Enter revenue amount");
+                int amt = Convert.ToInt32(Console.ReadLine());
+                rev = new Revenue(str, amt);
+                ss.Add(rev);
+                Console.WriteLine("Do you want to continue (yes/no)");
+                 answer=Console.ReadLine();
+            }while(answer != "no");
+
+           
+            
+            Console.WriteLine("Category Amount");
+            foreach (Revenue rv in ss)
+           {
+                sum = sum + rv.Amount;
+                Console.WriteLine("{0} {1}",rv.RevenueCategory, rv.Amount);
+                
+            }
+            Console.WriteLine("Total amount earned: {0}", sum);
+
+            Console.ReadKey();
+
+
+        }
+    }
+}
+
+public class Revenue:IComparable
+{
+    string revenueCategory;
+    int amount;
+
+    public Revenue(string revca, int amt)
+    {
+        revenueCategory = revca;
+        amount = amt;
+    }
+
+    public string RevenueCategory
+    {
+        get { return this.revenueCategory; }
+        set { this.revenueCategory = value; }
+    }
+
+    public int Amount
+    {
+        get { return this.amount; }
+        set { this.amount = value; }
+    }
+
+
+    public int CompareTo(object obj)
+    {
+        Revenue R = (Revenue)obj;
+        if (R.amount > this.amount)
+            return 1;
+        else
+            if (R.amount < this.amount)
+                return -1;
+            else
+                return 0;
+    }
+}
