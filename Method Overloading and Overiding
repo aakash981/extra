@@ -1,0 +1,266 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Method_Overloading_Q1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Menu");
+            Console.WriteLine("1.Player details of the delivery");
+            Console.WriteLine("2.Run details of the delivery");
+            int n = Convert.ToInt32(Console.ReadLine());
+            string bowlerName, batsmanName;
+            long runs;
+            Delivery obj = new Delivery();
+            switch (n)
+            {
+                case 1:
+                    Console.WriteLine("Enter the bowler name");
+                    bowlerName = Console.ReadLine();
+                    Console.WriteLine("Enter the batsman name");
+                    batsmanName = Console.ReadLine();
+                    obj.DisplayDeliveryDetails(bowlerName, batsmanName);
+                    break;
+                case 2:
+                    Console.WriteLine("Enter the number of runs");
+                    runs = Convert.ToInt64(Console.ReadLine());
+                    obj.DisplayDeliveryDetails(runs);
+                    break;
+            }
+            Console.ReadKey();
+        }
+    }
+}
+class Delivery
+{
+    public void DisplayDeliveryDetails(String bowler, String batsman)
+    {
+        string[] s1 = bowler.Split(new char[] {' '});
+        string bowlerLastName;
+        bowlerLastName = s1[s1.Length-1];
+        string[] s2 = batsman.Split(new char[] { ' ' });
+        string batsmanLastName;
+        batsmanLastName = s2[s2.Length-1];
+        Console.WriteLine("Bowler : " + bowlerLastName);
+        Console.WriteLine("Batsman : " + batsmanLastName);
+    }
+    public void DisplayDeliveryDetails(long runs)
+    {
+        if (runs == 4)
+        {
+            Console.WriteLine("Number of runs scored in the delivery : 4");
+            Console.WriteLine("It is a Boundary.");
+        }
+        else if (runs == 6)
+        {
+            Console.WriteLine("Number of runs scored in the delivery : 6");
+            Console.WriteLine("It is a Sixer.");
+        }
+        else
+        {
+            Console.WriteLine("Number of runs scored in the delivery : "+runs);
+        }
+    }
+
+}
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Overloading_Q2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Match obj = new Match();
+            Console.WriteLine("Menu");
+            Console.WriteLine("1.Match Date");
+            Console.WriteLine("2.Match Venue");
+            Console.WriteLine("3.Match Outcome");
+            int n = Convert.ToInt32(Console.ReadLine());
+            switch (n)
+            {
+                case 1:
+                    Console.WriteLine("Enter the date of the match");
+                    string date = Console.ReadLine();
+                    DateTime dt = DateTime.ParseExact(date,"dd/MM/yyyy", null);
+                    obj.DisplayMatchDetails(dt);
+                    break;
+                case 2:
+                    Console.WriteLine("Enter venue of the match");
+                    string Venue = Console.ReadLine();
+                    Console.WriteLine("Match Venue :");
+                    obj.DisplayMatchDetails(Venue);
+                    break;
+                case 3:
+                    Console.WriteLine("Enter the winner team of the match");
+                    string Winner = Console.ReadLine();
+                    Console.WriteLine("Enter the number of runs");
+                    long Runs = Convert.ToInt64(Console.ReadLine());
+                    obj.DisplayMatchDetails(Winner,Runs);
+                    break;
+            }
+            Console.ReadKey();
+        }
+    }
+}
+class Match
+{
+    public void DisplayMatchDetails(DateTime matchDate)
+    {
+        Console.WriteLine("Match Date : "+matchDate.ToString("MM-dd-yyyy"));
+    }
+    public void DisplayMatchDetails(string venue)
+    {
+        string stadium, city;
+        string[] s = venue.Split(new char[] { ',' });
+        stadium = s[0];
+        city = s[1];
+        Console.WriteLine("Stadium : "+stadium);
+        Console.WriteLine("City : " + city);
+    }
+    public void DisplayMatchDetails(string winnerTeam, long runs)
+    {
+        Console.WriteLine("Match Outcome :");
+        Console.WriteLine("{0} won by {1} runs",winnerTeam,runs);
+    }
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Overloading_Q3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter player name");
+            string Name = Console.ReadLine();
+            Console.WriteLine("Enter team name");
+            string TeamName = Console.ReadLine();
+            Console.WriteLine("Enter number of matches");
+            long NoOfMatches = Convert.ToInt64(Console.ReadLine());
+            Console.WriteLine("Menu");
+            Console.WriteLine("1.Bowler details");
+            Console.WriteLine("2.Batsman details");
+            Console.WriteLine("Enter choice");
+            int n = Convert.ToInt32(Console.ReadLine());
+            switch (n)
+            {
+                case 1:
+                    Console.WriteLine("Enter number of wicktes taken");
+                    long NoOfWickets = Convert.ToInt64(Console.ReadLine());
+                    Bowler obj1 = new Bowler(Name,TeamName,NoOfMatches,NoOfWickets);
+                    obj1.DisplayDetails();
+                    break;
+                case 2:
+                    Console.WriteLine("Enter number of runs scored");
+                    long NoOfRuns = Convert.ToInt64(Console.ReadLine());
+                    Batsman obj2 = new Batsman(Name, TeamName, NoOfMatches, NoOfRuns);
+                    obj2.DisplayDetails();
+                    break;
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
+class Player
+{
+    protected string _name, _teamName;
+
+    public string Name
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
+
+    public string TeamName
+    {
+        get { return _teamName; }
+        set { _teamName = value; }
+    }
+    protected long _noOfMatches;
+
+    public long NoOfMatches
+    {
+        get { return _noOfMatches; }
+        set { _noOfMatches = value; }
+    }
+    public Player(string Name, string TeamName, long NoOfMatches)
+    {
+        _name = Name;
+        _teamName = TeamName;
+        _noOfMatches = NoOfMatches;
+    }
+    public Player() { }
+    public void DisplayDetails()
+    {
+       
+    }
+}
+class Bowler : Player
+{
+    protected long _noOfWickets;
+
+    public long NoOfWickets
+    {
+        get { return _noOfWickets; }
+        set { _noOfWickets = value; }
+    }
+    public Bowler(string Name, string TeamName, long NoOfMatches, long NoOfWickets)
+    {
+        _name = Name;
+        _teamName = TeamName;
+        _noOfMatches = NoOfMatches;
+        _noOfWickets = NoOfWickets;
+    }
+    public new void DisplayDetails()
+    { 
+        Console.WriteLine("Bowler : "+Name);
+        Console.WriteLine("Team : "+TeamName);
+        Console.WriteLine("Number of matches : "+NoOfMatches);
+        Console.WriteLine("Number of wickets taken : "+NoOfWickets);
+    }
+}
+class Batsman:Player
+{
+    private long _noOfRuns;
+
+    protected long NoOfRuns
+    {
+        get { return _noOfRuns; }
+        set { _noOfRuns = value; }
+    }
+    public Batsman(string Name, string TeamName, long NoOfMatches, long NoOfRuns)
+    {
+        _name = Name;
+        _teamName = TeamName;
+        _noOfMatches = NoOfMatches;
+        _noOfRuns = NoOfRuns;
+    }
+    public new void DisplayDetails()
+    {
+        Console.WriteLine("Bowler : " + Name);
+        Console.WriteLine("Team : " + TeamName);
+        Console.WriteLine("Number of matches : " + NoOfMatches);
+        Console.WriteLine("Number of runs scored : " + NoOfRuns);
+    }
+}
