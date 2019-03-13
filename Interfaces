@@ -1,0 +1,181 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Interfaces_Q1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name,teamName;
+            int noOfMatches,noOfWicketsTaken;
+            long totalRunsScored;
+            Console.WriteLine("Enter player name");
+            name = Console.ReadLine();
+            Console.WriteLine("Enter team name");
+            teamName = Console.ReadLine();
+            Console.WriteLine("Enter number of matches played");
+            noOfMatches = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter total runs scored");
+            totalRunsScored = Convert.ToInt64(Console.ReadLine());
+            Console.WriteLine("Enter number of wickets taken");
+            noOfWicketsTaken = Convert.ToInt32(Console.ReadLine());
+
+            Player obj = new Player(name, teamName, noOfMatches, totalRunsScored, noOfWicketsTaken);
+            obj.DisplayPlayerStatistics();
+            Console.ReadKey();
+        }
+    }
+}
+interface IPlayerStatistics
+{
+    void DisplayPlayerStatistics();
+}
+class Player:IPlayerStatistics
+{
+    private string name;
+    private string teamName;
+    private int noOfMatches;
+    private long totalRunsScored;
+    private int noOfWicketsTaken;
+
+    public Player(string name, string teamName, int noOfMatches, long totalRunsScored, int noOfWicketsTaken)
+    {
+        // TODO: Complete member initialization
+        this.name = name;
+        this.teamName = teamName;
+        this.noOfMatches = noOfMatches;
+        this.totalRunsScored = totalRunsScored;
+        this.noOfWicketsTaken = noOfWicketsTaken;
+    }
+    public void DisplayPlayerStatistics()
+    {
+        Console.WriteLine("Player Details");
+        Console.WriteLine("Player name : "+name);
+        Console.WriteLine("Team name : "+teamName);
+        Console.WriteLine("No of matches : "+noOfMatches);
+        Console.WriteLine("Total runsscored : "+totalRunsScored);
+        Console.WriteLine("No of wickets taken : "+noOfWicketsTaken);
+    }
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Interfaces_Q2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Menu");
+            Console.WriteLine("1.Crciket Player Details");
+            Console.WriteLine("2.Hockey Player Details");
+            Console.WriteLine("Enter choice");
+            int n = Convert.ToInt32(Console.ReadLine());
+            switch (n)
+            {
+                case 1:
+                    Console.WriteLine("Enter player name");
+                    string name = Console.ReadLine();
+                    Console.WriteLine("Enter team name");
+                    string teamName = Console.ReadLine();
+                    Console.WriteLine("Enter number of matches played");
+                    int nom = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter total runs scored");
+                    int tr = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter total number of wickets taken");
+                    int wt = Convert.ToInt32(Console.ReadLine());              
+                    CricketPlayer cp = new CricketPlayer(name,teamName,nom,tr,wt);
+                    cp.DisplayPlayerStatistics();
+                    break;
+                case 2:
+                    Console.WriteLine("Enter player name");
+                    string name1 = Console.ReadLine();
+                    Console.WriteLine("Enter team name");
+                    string teamName1 = Console.ReadLine();
+                    Console.WriteLine("Enter number of matches played");
+                    int nom1 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter the position");
+                    string position = Console.ReadLine();
+                    Console.WriteLine("Enter total number of goals taken");
+                    int gt = Convert.ToInt32(Console.ReadLine());              
+                    HockeyPlayer hp = new HockeyPlayer(name1,teamName1,nom1,position,gt);
+                    hp.DisplayPlayerStatistics();
+                    break;
+                default:
+                    Console.WriteLine("Invalid Input");
+                    break;
+            }
+            Console.ReadKey();
+        }
+    }
+}
+interface IPlayerStatistics
+{
+    void DisplayPlayerStatistics();
+}
+abstract class Player
+{
+    protected string _name, _teamName;
+    protected int _noOfMatches;
+    public Player(string Name, string TeamName, int NoOfMatches)
+    {
+        _name = Name;
+        _teamName = TeamName;
+        _noOfMatches = NoOfMatches;
+    }
+    public Player() { }
+}
+class CricketPlayer: Player, IPlayerStatistics
+{
+    private int _totalRunsScored, _noOfWicketsTaken;
+
+ 
+    public CricketPlayer(string Name,string TeamName,int NoOfMatches, int TotalRunsScored, int NoOfWicketsTaken):base( Name, TeamName, NoOfMatches)
+    {
+        _totalRunsScored = TotalRunsScored;
+        _noOfWicketsTaken = NoOfWicketsTaken;
+    }
+    public void DisplayPlayerStatistics()
+    {
+        
+        Console.WriteLine("Player Details");
+        Console.WriteLine("Player name : "+_name);
+        Console.WriteLine("Team name : "+_teamName);
+        Console.WriteLine("No of matches : "+_noOfMatches);
+        Console.WriteLine("Total runsscored : "+_totalRunsScored);
+        Console.WriteLine("No of wickets taken : "+_noOfWicketsTaken);
+
+    }
+}
+class HockeyPlayer:Player,IPlayerStatistics
+{
+    private string _position;
+
+    private int _noOfGoals;
+
+    public HockeyPlayer(string Name, string TeamName, int NoOfMatches, string Position, int NoOfGoals) : base(Name, TeamName, NoOfMatches)
+    {
+        _position = Position;
+        _noOfGoals = NoOfGoals;
+    }
+    public void DisplayPlayerStatistics()
+    {
+        Console.WriteLine("Player Details");
+        Console.WriteLine("Player name : " + _name);
+        Console.WriteLine("Team name : " + _teamName);
+        Console.WriteLine("No of matches : " + _noOfMatches);
+        Console.WriteLine("Position : " + _position);
+        Console.WriteLine("No of goals taken : " + _noOfGoals);
+    }
+}
