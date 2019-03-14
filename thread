@@ -1,0 +1,191 @@
+::::::::::::::::::::::::::::::::::::::::::::::Ques 1::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+using System;
+
+using System.Collections.Generic;
+
+using System.Linq;
+
+using System.Text;
+
+using System.Threading;
+
+
+
+class SortScores
+
+{
+
+    int count = 0;
+
+    string _matchType;
+
+    public string MatchType
+
+    {
+
+        get { return _matchType; }
+
+        set { _matchType = value; }
+
+    }
+
+    string _scoreString;
+
+    public string ScoreString
+
+    {
+
+        get { return _scoreString; }
+
+        set { _scoreString = value; }
+
+    }
+
+    int[] _scores;
+
+    public int[] Scores
+
+    {
+
+        get { return _scores; }
+
+        set { _scores = value; }
+
+    }
+
+    public SortScores(string s1, string s2)
+
+    {
+
+        MatchType = s1;
+
+        ScoreString = s2;
+
+    }
+
+    public void run()
+
+    {
+
+        lock (this)
+
+        {
+
+
+
+            string[] t = ScoreString.Split(new char[] { ',' });
+
+
+
+            Scores = new int[t.Length];
+
+            for (int i = 0; i < t.Length; i++)
+
+            {
+
+                Scores[i] = Convert.ToInt32(t[i]);
+
+            }
+
+            Array.Sort(Scores);
+
+            count = t.Length;
+
+        }
+
+    }
+
+    public void GetScores()
+
+    {
+
+        Console.WriteLine("Match : " + MatchType);
+
+        for (int i = 0; i < count; i++)
+
+            Console.WriteLine(Scores[i]);
+
+    }
+
+}
+
+
+
+class Program
+
+{
+
+    public static void Main()
+
+    {
+
+        Console.WriteLine("Enter the match");
+
+        string s1 = Console.ReadLine();
+
+        Console.WriteLine("Enter the match Scores");
+
+        string m1 = Console.ReadLine();
+
+        SortScores k1 = new SortScores(s1, m1);
+
+        Thread t1 = new Thread(new ThreadStart(k1.run));
+
+
+
+        Console.WriteLine("Enter the match");
+
+        string s2 = Console.ReadLine();
+
+        Console.WriteLine("Enter the match Scores");
+
+        string m2 = Console.ReadLine();
+
+        SortScores k2 = new SortScores(s2, m2);
+
+        Thread t2 = new Thread(new ThreadStart(k2.run));
+
+
+
+        Console.WriteLine("Enter the match");
+
+        string s3 = Console.ReadLine();
+
+        Console.WriteLine("Enter the match Scores");
+
+        string m3 = Console.ReadLine();
+
+        SortScores k3 = new SortScores(s3, m3);
+
+        Thread t3 = new Thread(new ThreadStart(k3.run));
+
+        t1.Start();
+
+        t2.Start();
+
+        t3.Start();
+
+        t1.Join();
+
+        t2.Join();
+
+        t3.Join();
+
+        
+
+        Console.WriteLine("Ordered Score List");
+
+        k1.GetScores();
+
+        k2.GetScores();
+
+        k3.GetScores();
+
+        Console.ReadLine();
+
+    }
+
+}
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
