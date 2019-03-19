@@ -1,0 +1,205 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace @new
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            abc.cal();
+            Console.ReadKey();
+        }
+    }
+}
+public class abc {
+    public static void cal() {
+        string a, b;
+        a = Console.ReadLine();
+        b = Console.ReadLine();
+        int c = Convert.ToInt32(Console.ReadLine()); 
+        char[] ch = a.ToCharArray();
+        char[] ch1 = b.ToCharArray();
+        
+        Array.Reverse(ch1);
+        if (c > ch.Length) {
+            Console.WriteLine("error");
+        }
+        else if (ch[c-1] == ch1[c-1])
+        {
+            Console.WriteLine("Match");
+        }
+        else {
+            Console.WriteLine(ch[c] +"is not equal"  + ch1[c]);
+        }
+
+
+    }
+
+}
+===============================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace maintest
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            abc.array1();
+            Console.ReadLine();
+        }
+    }
+}
+public class abc {
+    public static void array1() {
+        int a = Convert.ToInt32(Console.ReadLine());
+        int [] b= new int[a];
+        int flag =0;
+        for (int i = 0; i < a; i++) {
+
+            b[i] = Convert.ToInt32(Console.ReadLine());
+        
+        }
+        for (int i = 0; i < a; i++) {
+            if (b[i] < 0)
+            {
+               
+                   flag++;
+            }
+        }
+            if(flag==0){
+                Array.Sort(b);
+                Console.WriteLine(b[0]);
+            }
+            else{Console.WriteLine("error");}
+        }
+      
+    }
+==========================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace maintest
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string y = Console.ReadLine();
+            //string s = abc.array1(y);
+            //Console.WriteLine(s);
+            Console.WriteLine(abc.array1(y));
+            Console.ReadLine();
+        }
+    }
+}
+public class abc {
+    public static string array1(string z)
+    {
+        List<int> l1 = new List<int>();
+        int a = Convert.ToInt32(Console.ReadLine());
+        for(int i=0;i<a;i++){
+        l1.Add(Convert.ToInt32(Console.ReadLine()));
+}
+        foreach (int i in l1) {
+            if (i <= 5)
+            {
+            }
+               
+            else { Console.WriteLine(i); }
+        }
+        
+            if (l1[0] > 500)
+            {
+                Console.WriteLine("more than 500");
+            }
+
+            Console.WriteLine(z);
+            return "return";
+    }     
+    }
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace rajat
+{
+    class Class1
+    {
+        public static string[] string_sort(string[] s)
+        {
+            string[] str = new string[s.Length];
+            string[] output = new string[1];
+            int j = 0;
+            foreach (string i in s)
+            {
+                char[] c = i.ToCharArray();
+                foreach (char c1 in c)
+                {
+                    if (!char.IsLetter(c1))
+                    {
+                        output[0] = ("Invalid Input");
+                        return output;
+                    }
+                }
+                List<char> l = new List<char>(i);
+                foreach (char q in i)
+                {
+                    if (q > 64 && q < 91)
+                    {
+                        l.Remove(q);
+                    }
+                }
+                 char [] ch1 = l.Distinct().ToArray();
+                Array.Sort(ch1);
+                str[j] = new string(ch1);
+                j++;
+            }
+            return str;
+        }
+    }
+}
+***********
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace rajat
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = Convert.ToInt16(Console.ReadLine());
+            string[] a = new string[n];
+
+            for (int i = 0; i < n; i++)
+            {
+                a[i] = Console.ReadLine();
+            }
+            string[] res = Class1.string_sort(a);
+            foreach (string j in res)
+            {
+                Console.WriteLine(j);
+            }
+            Console.ReadKey();
+        }
+
+    }
+}
