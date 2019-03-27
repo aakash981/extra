@@ -140,7 +140,9 @@ class Program
 
         Console.WriteLine("Enter the match Scores");
 
-        string m2 = Console.ReadLine();
+
+
+string m2 = Console.ReadLine();
 
         SortScores k2 = new SortScores(s2, m2);
 
@@ -189,3 +191,55 @@ class Program
 }
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
+
+public partial class _Default : Page
+{
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void TextBox6_TextChanged(object sender, EventArgs e)
+    {
+
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(localdb)\v11.0;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate=False");
+            con.Open();
+           // SqlDataReader dr;
+
+            string insert = "insert into table1(user_id,first_name,last_name,email,password,emp_type) values(@p1,@p2,@p3,@p4,@p5,@p6)";
+            SqlCommand cmd = new SqlCommand(insert, con);
+            cmd.Parameters.AddWithValue("@p1", TextBox1.Text);
+            cmd.Parameters.AddWithValue("@p2", TextBox2.Text);
+            cmd.Parameters.AddWithValue("@p3", TextBox3.Text);
+            cmd.Parameters.AddWithValue("@p4", TextBox4.Text);
+            cmd.Parameters.AddWithValue("@p5", TextBox5.Text);
+            cmd.Parameters.AddWithValue("@p6", TextBox6.Text);
+            cmd.ExecuteNonQuery();
+            Response.Write("Student registeration Successfully!!!thank you");
+            con.Close();
+        }
+        catch (Exception ex)
+        {
+            Response.Write("error" + ex.ToString());
+        }  
+    }
+    protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
+    {
+
+    }
+}
