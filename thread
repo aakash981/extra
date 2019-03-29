@@ -243,3 +243,51 @@ public partial class _Default : Page
 
     }
 }
+=====================================================================
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace Question_Paper_Generator
+{
+    public partial class SignInUser : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+     
+             SqlConnection con = new SqlConnection(@"Data Source=(localdb)\Projects;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False");
+             con.Open();
+            SqlCommand cmd = new SqlCommand("select * from userdetails where userid = @username and password = @password;",con);
+            
+            cmd.Parameters.AddWithValue("@username", empidTB.Text);
+            cmd.Parameters.AddWithValue("@password", passwordTB.Text);
+            cmd.Connection = con;
+            
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            if (dt.Rows.Count > 0)
+
+            {
+                Session.Add("Userid", empidTB.Text);
+                Response.Redirect("~/UserHomePage.aspx");
+            }
+            else
+            {
+                Response.Write("Invalid username or password!!!!!!!!!");
+            }
+       
+        }
+    }
+}
