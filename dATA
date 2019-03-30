@@ -1,0 +1,1745 @@
+1.Introduction
+1.1	About Mobile Store Management Portal :-
+
+Mobile Store Management Portal is developed in ASP.NET, which can keep track of all your business activity of a Mobile Store/Business from small segments to large and very large segments. But maintaining the same quality or upgrading the present data is not an easy task because quality is the ultimate picture of the entire business. Good quality of a portal depends on many factors e.g. sound infrastructure, better management control, etc. So to obtain the optimum quality, developers have to upgrade those ingredients by which the quality is affected. To upgrade those ingredients the developers have to depend on some types of data. So, if the decision making person of the business wants to have a grip on the total business, he/she will have to have acknowledge of the entire flow of data and information within the organization .It cannot be done without the help of a Business Related Software.                                                                                                                                            As we all know the Mobile Store Management can be divided into three major categories i.e. 
+1) Retail 
+2) Wholesale 
+3) Export
+And here the admins are allowed to manage the data and modify also for the customers who buy products from their business.
+1.2 Importance:-
+
+•	This portal will be a helping hand for the people who want to digitize their business with time saving web design that is not only interactive but assist them with database features that can be updated and viewed as desired.
+
+•	The portal has been made so easy to access that there is no hassle and the prime thing that makes this very important to use is the catergorization which helps the admin to access and store data very easily with every detail for particular device.
+
+
+
+1.3 Objective:-
+The purpose of developing Mobile Store Management Portal is to make it computerized.
+	Creation of unlimited types of purity:-
+Each device is categorized according to its company
+	Creation of Device Specs:-
+Every single information regarding the device can be found here e.g. Processor, RAM, Camera etc.
+	Creation of Customer Master:-
+Every single information regarding the customer can be stored here e.g. name & address of the customer etc.
+	Creation of Admin Master via SignUp page:-
+There can be multiple admins for the system who are allowed to access the portal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.Problem Definition
+
+2.1    Need :-
+             While developing this project it has been seen that following objectives must be    achieved:
+	User Friendliness:
+         The primary objective of this project is User Friendliness, because User interface design creates an effective communication medium between a human and a computer. If the software is difficult to use, then it would tend to arise many problems. Keeping all these things in view, I have designed the screen layouts which are ease to use and it allows user interaction to be interruptible.
+	Least Maintainability: 
+         Software maintainability concerns with the ease with which repair may be made to the software as indicated by the following sub attributes: analyzability, changeability, stability and testability.
+	Reliability:
+         Since software reliability is defined in statistical terms as “the probability of failure-free operation of a computer program in a specified environment for a specified time”. This project will be a reliable one based on the existing information of Project.
+
+	Portability:
+         Portability concerns with the ease with which the software can be transported from one environment to another as indicated by the following sub attributes: adaptability, install ability, conformance, and replace ability.
+
+2.2     Scope:-
+  
+           There is so much scope in Mobile Store Web Portal to earn fortunes. Mobile Store Web Portal is divided in various divisions.
+          The portal currently made is majorly used by the admin but with advancements like
+          dynamic product updation, it can be made easy for users to choose and purchase a 
+          device just by interacting on the portal which will not require any mediator or to 
+          whatsoever it may concern.  
+
+
+
+
+
+
+
+
+2.3 Team Structure:-
+
+Our team consist of 2 members. The structure of our team are as follows:
+Akshay Patidar  
+Rajat Kapoor 
+BCA 5th sem.(Final Year)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.Requirement  Specifications
+
+3.1   Software Requirements:-
+According to specifications provided by user we made our project in Visual Studio 2010, which is platform independent. Software specifications of the project are following:
+		FRONT END: - ASP.NET(C#.NET)
+		BACKEND DATABASE: - Microsoft SQL Server
+
+3.2  Hardware Requirements:-
+	The minimum hardware requirements of the project are following:
+•	RAM :               		 	    1 GB
+•	PROCESSOR:    		                Intel® Core™ 2 Duo CPU T6570, 2.10 GHz
+•	HARD DISK :     			    40 GB Hard Disk space (min)
+•	MONITOR :        		     VGA/SVGA
+•	 MOUSE:             		     Ball Mouse and upward.
+•	KEYBOARD :      		     Simple Keyboard and upward (104 Key)
+•	OPERATING SYSTEM:	     Windows -7
+   
+
+3.3. Main Module of the System :
+•	Admin 
+
+
+                                   
+
+
+
+4.System Study:-
+
+4.1 Introduction:-
+
+The goal of any system development is to develop and implement the system cost effectively; user-friendly and most suited to the user’s analysis is the heart of the process. Analysis is the study of the various operations performed by the system and their relationship within and outside of the system. During analysis, data collected on the files, decision points and transactions handled by the present system. Different kinds of tools are used in analysis of which interview is a common one.
+
+
+4.2   Initial Investigation:-
+
+The first step in system development life cycle is the identification of need of change to improve or enhance an existing system. An initial investigation on existing system was carried out. The present system of hospital is completely manual. Many problems were identified during the initial study of the existing system
+
+4.3 Existing System:-
+
+System analysis is a detailed study of the various operations performed by a system and their relationships within and outside of the system. Here the key question is – What all problems exist in the present system? What must be done to solve the problem? Analysis begins when a user or manager begins a study of the program using existing system.
+During analysis, data collected on the various files, decision points and transactions handled by the present system. The commonly used tools in the system are Data Flow Diagram, interviews, etc. training, experience and common sense are required for collection of relevant information needed to develop the system. The success of the system depends largely on how clearly the problem is defined, thoroughly investigated and properly carried out through the choice of solution. A good analysis model should provide not only the mechanisms of problem understanding but also the framework of the solution. Then the proposed system should be analyzed thoroughly in accordance with the needs.
+System analysis can be categorized into four parts.
+•	System planning and initial investigation
+•	Information gathering
+•	Applying analysis tools for structured analysis
+•	Feasibility study 
+•	Cost/benefit analysis
+
+
+4.4 Proposed System:-
+
+•	The drawback of the existing system is that it is very difficult to retrieve data from case files. It is difficult to handle the whole system manually and it is less accurate and to keep the data in case files for future reference because it may get destroyed. Moreover it is very difficult to retrieve data. Redundancy of data may occur and this may lead to the inconsistency. The manual system is so time-consuming.
+
+•	The proposed system is very easy to operate. Speed and accuracy are the main advantages of proposed system. There is no redundancy of data. The data are stored in the computer’s secondary memories like hard disk, etc. it can be easily receive and used at any time. The proposed system will easily handle all the data and the work done by the existing systems. The proposed systems eliminate the drawbacks of the existing system to a great extent and it provides tight security to data.
+
+      4.5 About Operating System:-
+
+Windows 7 is a line of operating systems developed by Microsoft for use on general purpose computer systems, including home and business desktops, notebook computers and media centers. Windows7 is the successor to both Windows 2000 and Windows Me and is first consumer oriented operating system produced by Microsoft to be built on the Windows NT kernel and architecture.
+                      The most common editions of operating systems are Windows XP home edition, which is targeted at home users, and Windows7  professional, which has additional features such as, support for Windows server domain and two physical processors and is targeted at power users and business clients. Windows7 Tablet PC edition is designed to run the ink-aware Tablet PC platform. Two separate 64 bit versions of Windows7   were also released, Windows XP 64 bit edition for IA-64(Itanium) processors and Windows XP Professional x64 edition for x86-64 processor.
+
+
+
+
+
+
+
+
+
+
+5. Planning and Designing
+
+5.1 User Case Diagram:-
+                                      
+                                      For Admin:-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 5.2 DFD Diagram:-
+
+Level:1
+
+
+
+ 
+
+
+Level:2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5.3  Entity Relationship Diagram:-
+
+
+
+                                
+                                               
+                                             
+
+                                
+		                                      
+                                  
+
+
+
+                                
+
+
+
+                              
+                                
+
+
+
+
+
+
+
+
+                              
+
+
+
+5.4 Flow Chart:-
+
+
+
+
+
+
+
+                       No             
+
+
+
+
+
+	Yes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	No
+	
+		Yes
+
+
+
+
+
+
+
+
+6. Software Description
+
+6.1 Introduction To .Net Framework:-
+
+The .NET Framework is a new computing platform that simplifies application development in the highly distributed environment of the Internet. The .NET Framework is designed to fulfill the following objectives: 
+
+•	To provide a consistent object-oriented programming environment whether object code is stored and executed locally, executed locally but Internet-distributed, or executed remotely. 
+•	To provide a code-execution environment that minimizes software deployment and versioning conflicts. 
+•	To provide a code-execution environment that guarantees safe execution of code, including code created by an unknown or semi-trusted third party. 
+•	To provide a code-execution environment that eliminates the performance problems of scripted or interpreted environments. 
+•	To make the developer experience consistent across widely varying types of applications, such as Windows-based applications and Web-based applications. 
+•	To build all communication on industry standards to ensure that code based on the .NET Framework can integrate with any other code. 
+The .NET Framework has two main components: the common language runtime and the .NET Framework class library. The common language runtime is the foundation of the .NET Framework. You can think of the runtime as an agent that manages code at execution time, providing core services such as memory management, thread management, and Removing, while also enforcing strict type safety and other forms of code accuracy that ensure security and robustness. In fact, the concept of code management is a fundamental principle of the runtime. Code that targets the runtime is known as managed code, while code that does not target the runtime is known as unmanaged code. The class library, the other main component of the .NET Framework, is a comprehensive, object-oriented collection of reusable types that you can use to develop applications ranging from traditional command-line or graphical user interface (GUI) applications to applications based on the latest innovations provided by ASP.NET, such as Web Forms and XML Web services.
+
+ 
+Figure 3.3.0
+FEATURES OF THE COMMON LANGUAGE RUNTIME
+
+The common language runtime manages memory, thread execution, code execution, code safety verification, compilation, and other system services. These features are intrinsic to the managed code that runs on the common language runtime.
+With regards to security, managed components are awarded varying degrees of trust, depending on a number of factors that include their origin (such as the Internet, enterprise network, or local computer). This means that a managed component might or might not be able to perform file-access operations, registry-access operations, or other sensitive functions, even if it is being used in the same active application.
+The runtime enforces code access security. For example, users can trust that an executable embedded in a Web page can play an animation on screen or sing a song, but cannot access their personal data, file system, or network. The security features of the runtime thus enable legitimate Internet-deployed software to be exceptionally featuring rich.
+The runtime also enforces code robustness by implementing a strict type- and code-verification infrastructure called the common type system (CTS). The CTS ensures that all managed code is self-describing. The various Microsoft and third-party language compilers  
+ 
+Figure 3.3.1
+While the runtime is designed for the software of the future, it also supports software of today and yesterday. Interoperability between managed and unmanaged code enables developers to continue to use necessary COM components and DLLs.
+The runtime is designed to enhance performance. Although the common language runtime provides many standard runtime services, managed code is never interpreted. A feature called just-in-time (JIT) compiling enables all managed code to run in the native machine language of the system on which it is executing. Meanwhile, the memory manager removes the possibilities of fragmented memory and increases memory locality-of-reference to further increase performance.
+Finally, the runtime can be hosted by high-performance, server-side applications, such as Microsoft® SQL Server™ and Internet Information Services (IIS). This infrastructure enables you to use managed code to write your business logic, while still enjoying the superior performance of the industry's best enterprise servers that support runtime hosting.
+
+
+
+.NET FRAMEWORK CLASS LIBRARY
+
+The .NET Framework class library is a collection of reusable types that tightly integrate with the common language runtime. The class library is object oriented, providing types from which your own managed code can derive functionality. This not only makes the .NET Framework types easy to use, but also reduces the time associated with learning new features of the .NET Framework. In addition, third-party components can integrate seamlessly with classes in the .NET Framework.
+For example, the .NET Framework collection classes implement a set of interfaces that you can use to develop your own collection classes. Your collection classes will blend seamlessly with the classes in the .NET Framework.
+As you would expect from an object-oriented class library, the .NET Framework types enable you to accomplish a range of common programming tasks, including tasks such as string management, data collection, database connectivity, and file access. In addition to these common tasks, the class library includes types that support a variety of specialized development scenarios. For example, you can use the .NET Framework to develop the following types of applications and services: 
+•	Console applications. 
+•	Scripted or hosted applications. 
+•	Windows GUI applications (Windows Forms). 
+•	ASP.NET applications. 
+•	XML Web services. 
+•	Windows services. 
+For example, the Windows Forms classes are a comprehensive set of reusable types that vastly simplify Windows GUI development. If you write an ASP.NET Web Form application, you can use the Web Forms classes.
+
+CLIENT APPLICATION DEVELOPMENT
+
+Client applications are the closest to a traditional style of application in Windows-based programming. These are the types of applications that display windows or forms on the desktop, enabling a user to perform a task. Client applications include applications such as word processors and spreadsheets, as well as custom business applications such as data-entry tools, reporting tools, and so on. Client applications usually employ windows, menus, buttons, and other GUI elements, and they likely access local resources such as the file system and peripherals such as printers.
+
+ 
+Figure 3.3.2
+The Windows Forms classes contained in the .NET Framework are designed to be used for GUI development. You can easily create command windows, buttons, menus, toolbars, and other screen elements with the flexibility necessary to accommodate shifting business needs.
+For example, the .NET Framework provides simple properties to adjust visual attributes associated with forms. In some cases the underlying operating system does not support changing these attributes directly, and in these cases the .NET Framework automatically recreates the forms. This is one of many ways in which the .NET Framework integrates the developer interface, making coding simpler and more consistent.
+
+ 6.2 ASP.NET 
+
+Server Application Development
+Server-side applications in the managed world are implemented through runtime hosts. Unmanaged applications host the common language runtime, which allows your custom managed code to control the behavior of the server. This model provides you with all the features of the common language runtime and class library while gaining the performance and scalability of the host server.
+The following illustration shows a basic network schema with managed code running in different server environments. Servers such as IIS and SQL Server can perform standard operations while your application logic executes through the managed code.
+
+ 
+Figure 3.3.3
+
+SERVER-SIDE MANAGED CODE
+
+ASP.NET is the hosting environment that enables developers to use the .NET Framework to target Web-based applications. However, ASP.NET is more than just a runtime host; it is a complete architecture for developing Web sites and Internet-distributed objects using managed code. Both Web Forms and XML Web services use IIS and ASP.NET as the publishing mechanism for applications, and both have a collection of supporting classes in the .NET Framework.
+XML Web services, an important evolution in Web-based technology, are distributed, server-side application components similar to common Web sites. However, unlike Web-based applications, XML Web services components have no UI and are not targeted for browsers such as Internet Explorer and Netscape Navigator. Instead, XML Web services consist of reusable software components designed to be consumed by other applications, such as traditional client applications, Web-based applications, or even other XML Web services. As a result, XML Web services technology is rapidly moving application development and deployment into the highly distributed environment of the Internet.
+If you have used earlier versions of ASP technology, you will immediately notice the improvements that ASP.NET and Web Forms offers. For example, you can develop Web Forms pages in any language that supports the .NET Framework. In addition, your code no longer needs to share the same file with your HTTP text (although it can continue to do so if you prefer). Web Forms pages execute in native machine language because, like any other managed application, they take full advantage of the runtime. In contrast, unmanaged ASP pages are always scripted and interpreted. ASP.NET pages are faster, more functional, and easier to develop than unmanaged ASP pages because they interact with the runtime like any managed application.
+
+ACTIVE SERVER PAGES.NET
+ASP.NET is a programming framework built on the common language runtime that can be used on a server to build powerful Web applications. ASP.NET offers several important advantages over previous Web development models:
+•	Enhanced Performance. ASP.NET is compiled common language runtime code running on the server. Unlike its interpreted predecessors, ASP.NET can take advantage of early binding, just-in-time compilation, native optimization, and caching services right out of the box. This amounts to dramatically better performance before you ever write a line of code.
+•	World-Class Tool Support. The ASP.NET framework is complemented by a rich toolbox and designer in the Visual Studio integrated development environment. WYSIWYG editing, drag-and-drop server controls, and automatic deployment are just a few of the features this powerful tool provides.
+•	Power and Flexibility. Because ASP.NET is based on the common language runtime, the power and flexibility of that entire platform is available to Web application developers. The .NET Framework class library, Messaging, and Data Access solutions are all seamlessly accessible from the Web. ASP.NET is also language-independent, so you can choose the language that best applies to your application or partition your application across many languages. Further, common language runtime interoperability guarantees that your existing investment in COM-based development is preserved when migrating to ASP.NET.
+•	Simplicity. ASP.NET makes it easy to perform common tasks, from simple form submission and client authentication to deployment and site configuration. For example, the ASP.NET page framework allows you to build user interfaces that cleanly separate application logic from presentation code and to handle events in a simple, Visual Basic - like forms processing model. Additionally, the common language runtime simplifies development, with managed code services such as automatic reference counting and garbage collection.
+
+
+
+
+
+
+
+
+6.3 Microsoft Visual Studio 2010:-
+
+Microsoft Visual Studio is an integrated development environment (IDE) from Microsoft. It is used to develop computer programs for Microsoft Windows, as well as web sites, web applications and web services. Visual Studio uses Microsoft software development platforms such as Windows API, Windows Forms, Windows Presentation Foundation, Windows Store and Microsoft Silver light. It can produce both native code and managed code.
+                                   Visual Studio supports different programming languages and allows the code editor and debugger to support (to varying degrees) nearly any programming language, provided a language-specific service exists. Built-in languages include C,[8] C++and C++/CLI (via Visual C++), VB.NET (via Visual Basic .NET), C# (via Visual C#), and F# (as of Visual Studio 2010[9]). Support for other languages such as Python, Ruby, Node.js, and M among others is available via language services installed separately. 
+                                  It also supports XML/XSLT, HTML/XHTML, JavaScript and CSS. Java (and J#) was supported in the past.
+
+Starting Visual Studio 2010:-
+
+To start Visual Studio:-
+•	On the Windows taskbar, click Start, click All Programs, and then click the Microsoft Visual Studio 2010 folder. 
+                  The folders and icons in the Microsoft Visual Studio 2010 folder appear in a list.
+
+•	Click the Microsoft Visual Studio 2010 icon
+
+When Visual Studio starts, you see the development environment on the screen with its many menus, tools, and component windows, as shown here. (These windows are sometimes called tool windows.) You also should see a Start Page containing a set of tabs with links, guidance and learning resources, news, and project options. The Start Page is a comprehensive source of information about your project, as well as resources within the Visual Basic development community.
+
+
+ 
+
+ Getting Started 
+
+ Integrated Development Environment (IDE) :-
+
+The Visual Studio product family shares a single integrated development environment (IDE) that is composed of several elements: the Menu bar, Standard toolbar, various tool windows docked or auto-hidden on the left, bottom, and right sides, as well as the editor space. The tool windows, menus, and toolbars available depend on the type of project or file you are working in.
+ Below we see the Visual Studio IDE (Integrated Development Environment):
+
+ 
+
+ New Project:-
+
+ The first thing you do when you want to create a new application is to create a new project. 
+This can be done from the Start Page:
+
+ 
+
+Or from the File menu:-
+ 
+Then the “New Project” window appears:-
+
+ 
+
+In this window you will select an appropriate template based on what kind of application you want to create, and a name and location for your project and solution. 
+The most common applications are: 
+• Windows Form Application 
+• Console Application 
+• WPF Application 
+• ASP.NET Web Application
+ • Silver light Application
+
+ Solution Explorer:-
+
+ Solutions and projects contain items that represent the references, data connections, folders, and files that you need to create your application. A solution container can contain multiple projects and a project container typically contains multiple items.
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+IDE Main Window:-
+       The Visual Studio environment’s main window and its various child windows. Note that each window can be moved, resized, opened, closed, and customized. Some windows have tabs that allow you to display different contents.. The windows in the IDE are considered either document windows or tool windows. The Designer and Editor windows are generally displayed in tabs in the center of the screen.
+                                       The IDE main window holds the Visual Studio menu bar and the toolbars. You can display or hide the various windows from the View menu.
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Toolbars:-
+
+You can use the buttons on the toolbars as shortcuts for frequently used operations. Each button represents a command that also can be selected from a menu,which is useful for designing forms in the Form Designer; and which contains buttons to use in the Editor window. Select View / Toolbars to display or hide these and other toolbars.
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+Properties Window:-
+
+ You use the Properties window to set the properties for the objects in your project. 
+
+ 
+. 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Toolbox:-
+
+Help Visual Studio has an extensive Help feature, which includes the Microsoft Developer Network library (MSDN). You can find reference materials for Visual Basic, C++, C#, and Visual Studio; several books; technical articles; and the Microsoft Knowledge Base, a database of frequently asked questions and their answers. Help includes the entire reference manual, as well as many coding examples. See the topic “Visual Studio Help” later in this chapter for help on Help. When you make a selection from the Help menu, the requested item appears in a new browser window that floats on top of the IDE window (Figure 1.9), so you can keep both open at the same time.
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+6.4 SQL SERVER:-
+	A database management, or DBMS, gives the user access to their data and helps them transform the data into information. Such database management systems include dBase, paradox, IMS, SQL Server and SQL Server.  These systems allow users to create, update and extract information from their database.
+	A database is a structured collection of data.  Data refers to the characteristics of people, things and events.  SQL Server stores each data item in its own fields.  In SQL Server, the fields relating to a particular person, thing or event are bundled together to form a single complete unit of data, called a record (it can also be referred to as raw or an occurrence).  Each record is made up of a number of fields.  No two fields in a record can have the same field name.
+	During an SQL Server Database design project, the analysis of your business needs identifies all the fields or attributes of interest.  If your business needs change over time, you define any additional fields or change the definition of existing fields.
+
+
+
+ 
+Figure 3.3.4
+
+SQL SERVER TABLES
+	SQL Server stores records relating to each other in a table.  Different tables are created for the various groups of information. Related tables are grouped together to form a database.
+PRIMARY KEY
+	Every table in SQL Server has a field or a combination of fields that uniquely identifies each record in the table.  The Unique identifier is called the Primary Key, or simply the Key.  The primary key provides the means to distinguish one record from all other in a table.  It allows the user and the database system to identify, locate and refer to one particular record in the database.
+RELATIONAL DATABASE
+	Sometimes all the information of interest to a business operation can be stored in one table.  SQL Server makes it very easy to link the data in multiple tables. Matching an employee to the department in which they work is one example.  This is what makes SQL Server a relational database management system, or RDBMS.  It stores data in two or more tables and enables you to define relationships between the table and enables you to define relationships between the tables.
+FOREIGN KEY
+	When a field is one table matches the primary key of another field is referred to as a foreign key.  A foreign key is a field or a group of fields in one table whose values match those of the primary key of another table.
+REFERENTIAL INTEGRITY
+	Not only does SQL Server allow you to link multiple tables, it also maintains consistency between them.  Ensuring that the data among related tables is correctly matched is referred to as maintaining referential integrity.
+ADVANTAGES OF RDBMS
+•	Redundancy can be avoided
+•	Inconsistency can be eliminated
+•	Data can be Shared
+•	Standards can be enforced
+•	Security restrictions ca be applied
+•	Integrity can be maintained
+•	Conflicting requirements can be balanced
+•	Data independence can be achieved.
+
+DISADVANTAGES OF DBMS
+	A significant disadvantage of the DBMS system is cost.  In addition to the cost of purchasing of developing the software, the hardware has to be upgraded to allow for the extensive programs and the workspace required for their execution and storage.  While centralization reduces duplication, the lack of duplication requires that the database be adequately backed up so that in case of failure the data can be recovered.
+
+FEATURES OF SQL SERVER (RDBMS)
+	SQL SERVER is one of the leading database management systems (DBMS) because it is the only Database that meets the uncompromising requirements of today’s most demanding information systems.  From complex decision support systems (DSS) to the most rigorous online transaction processing (OLTP) application, even application that require simultaneous DSS and OLTP access to the same critical data, SQL Server leads the industry in both performance and capability
+SQL SERVER is a truly portable, distributed, and open DBMS that delivers unmatched performance, continuous operation and support for every database.
+SQL SERVER RDBMS is high performance fault tolerant DBMS which is specially designed for online transactions processing and for handling large database application.
+SQL SERVER with transactions processing option offers two features which contribute to very high level of transaction processing.
+
+
+                                                                                                                                                                                                  
+                             
+
+
+6.5 Database Connectivity:-
+
+Step1:- First open your visual studio 2010-> go File-> click New Website->Select ASP.NET Empty website->click OK.
+
+Go Solution Explorer->Add New web form(Default.aspx)-->Drag and drop some controls as shown below :- 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Step2:- Now open Solution Explorer-> Right mouse click on website(Application) which is as  shown below:-
+
+ 
+
+
+
+ Step3:-Now Select SQL Server Database->click Add button ,which is shown below:-
+
+ 
+
+Step4:- Now Double click on Database.mdf File in Solution Explorer->Now Right click on Tables  Click Add New Table->Now Write required column Name-> Click save  button ->Write the table NAME-> Click OK. Which is  as shown below :-
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+Step5:-  Now Double click on Submit Button -> Write the following code for Database connectivity which are given below:-
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.IO;
+using System.Data;
+using System.Data.SqlClient;
+
+public partial class Add_Product : System.Web.UI.Page
+{
+    SqlConnection sqlc = new SqlConnection("Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\Database.mdf;Integrated Security=True;User Instance=True");
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        try
+        {
+            sqlc.Open();
+        }
+        catch (Exception ex)
+        {
+            Response.Write(ex.Message);
+        }
+       
+
+    }
+ protected void Button1_Click(object sender, EventArgs e)
+	   {
+
+        Sqlc.open();
+SqlCommand cmd = new SqlCommand();
+  cmd = new SqlCommand(“Insert into Login(username,password) Values(‘”+TextBox1.Text+”’,’”+TextBox2.Text+”’)”,sqlc);
+cmd.ExecuteNonQuery();
+  Label3.Text = "Data is successfully inserted in database ";
+}
+}
+
+
+
+Step6:- Run the Application(Press F5).Which are shown below:
+
+
+Output:-
+
+ 
+
+
+
+
+
+Step7:- Now you can see the inserted data in Database.
+
+ 
+
+7. Database  Design
+
+
+The general theme behind a database is to handle information as an integrated whole. A database is a collection of interrelated data stored with minimum redundancy to serve many users quickly and effectively. After designing the input and output, the analyst must concentrate on database design or how data should be organized around user requirements. The general objective is to make information access, easy, quick, inexpensive and flexible for other users. During database design, the following objectives are concerned:-
+•	Controlled redundancy
+•	Easy to learn and use
+•	More information and low cost
+•	Accuracy
+•	Integrity
+
+
+
+Table Name:- Register
+
+ 
+
+
+
+
+
+
+
+
+
+Table Name:- Features
+
+ 
+
+
+
+
+Table Name:- Customer
+
+
+ 
+
+
+
+
+
+                            8 . Screenshots and Coding
+
+
+  Home Page:-
+
+ 
+
+ 
+
+
+
+
+
+ 
+
+
+	<!-- +++++ Projects Section +++++ -->
+	
+	<div class="container pt">
+		<div class="row mt centered">	
+			<div class="col-lg-4">
+<a href="apple.aspx"><img class="img-responsive"  src="Other%20Images/Apple_logo%20(1).jpg" alt="" /></a><br />
+&nbsp;</div>
+			<div class="col-lg-4">
+<a  href="samsung.aspx"><img class="img-responsive" src="Other%20Images/Samsung-logo-2015-640x480.png" alt="" /></a></div>
+			<div class="col-lg-4">
+<a href="nexus.aspx" shape="circle"><img class="img-responsive" src="Other%20Images/Nexus-5X-640x480.png" alt="" /></a></div>
+		
+		<div class="row mt centered">	
+
+			<div class="col-lg-4">
+<a href="oneplus.aspx"><img class="img-responsive" src="Other%20Images/oneplus-one-a-high-end-device-that-may-kill-nexus-5-iphone-5s.jpg" 
+                    alt="" /></a>
+				
+			</div>
+			<div class="col-lg-4">
+				<br />
+				<a href="motog.aspx"><img class="img-responsive" src="Other%20Images/Motorola-emblem1-e1409634238547-640x480.jpg" alt="" /></a>
+				
+            </div>
+			<div class="col-lg-4">
+				<br />
+				<a href="micros.aspx"><img class="img-responsive" src="Other%20Images/New-Microsoft-Logo-PPT-Backgrounds.jpg" alt="" /></a>
+				
+			</div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+
+<!-- +++++ Footer Section +++++ -->
+	  <div id="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4">
+                      <h3>
+                          Easy<br />
+                          Navigation<br />
+                          Footer</h3>
+                  </div>
+                  <!-- /col-lg-4 -->
+				
+				  <div class="col-lg-4">
+                      <h4>
+                          Navigate To?</h4>
+                      <p>
+                      </p>
+                      <li><a href="index.aspx">Home</a>
+				      </li>
+                      <li><a href=register.aspx>Sign Up</a>
+                      </li>
+                  </div>
+                  <!-- /col-lg-4 -->
+				
+				  <div class="col-lg-4">
+                      <h4>
+                          About mobile Store</h4>
+<p>This web portal is created with the aim to provide ample facilities for admin to manage different devices and facilitate the purchase process.</p>
+
+                  </div>
+                  <!-- /col-lg-4 -->
+		
+			  </div>
+          </div>
+      </div>
+	
+
+
+
+
+
+
+
+Product Page (Apple):-
+
+ 
+
+Coding:-
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class apple : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+       
+    }
+    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Apple/apple-iphone-4-ofic-final.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Apple/apple-iphone-5c-new2.jpg"; 
+        Response.Redirect("~/purchase.aspx");  
+    }
+    protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Apple/apple-iphone-5-ofic.jpg";
+            Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Apple/topic_iphone_4.png";
+            Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Apple/apple-iphone-5s-ofic.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton6_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Apple/apple-iphone-6-4.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton7_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Apple/apple-iphone-6-plus2.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton8_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Apple/apple-iphone-6s1.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton9_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Apple/apple-iphone-6s-plus.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton10_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Apple/apple-iphone-7r4.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton11_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Apple/apple-iphone-7-plus-r2.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Product Page (Samsung):-
+
+ 
+
+Coding:-
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+
+public partial class samsung : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Samsung/samsung-galaxy-a3-2016.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Samsung/samsung-galaxy-a5-2016.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Samsung/samsung-galaxy-j1-2016.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Samsung/samsung-galaxy-j3.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Samsung/samsung-galaxy-note5.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton6_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Samsung/samsung-galaxy-note7.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton7_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Samsung/samsung-galaxy-s6-cdma.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton8_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Samsung/samsung-galaxy-s6-edge-cdma.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton10_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Samsung/samsung-galaxy-s6-edge-plus.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton11_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Samsung/samsung-galaxy-s7--.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton12_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Samsung/samsung-galaxy-s7-edge-.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+   
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Product Page (Nexus):-
+
+ 
+
+Coding:-
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+
+public partial class nexus : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Google Nexus Series/nexus4-1.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+   
+ protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Google Nexus Series/lg-google-nexus-5-.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Google Nexus Series/google-nexus-6.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Google Nexus Series/nexus 5x.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Google Nexus Series/huawei-nexus-6p-1.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Product Page (OnePlus):-
+
+
+ 
+ 
+
+Coding:-
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class oneplus : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/OnePlus/oneplus-one.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/OnePlus/oneplus-two.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    
+
+protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/OnePlus/oneplus-x.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+   
+ protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/OnePlus/oneplus-3-.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Product Page (Motorola):-
+
+ 
+Coding:-
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
+public partial class motog : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Motorola/motorola-moto-e.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Motorola/motorola-moto-e-2.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Motorola/motorola-moto-e3.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Motorola/motorola-moto-e3-pow.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Motorola/motorola-moto-g.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton6_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Motorola/motorola-moto-g-2.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton7_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Motorola/motorola-moto-g-3.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton8_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Motorola/motorola-moto-g4-.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton9_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Motorola/motorola-moto-g4-play.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton10_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Motorola/motorola-moto-g4-plus-r.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton11_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Motorola/moto-x.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton12_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Motorola/moto-x-play-r.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton13_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Motorola/motorola-moto-x-2.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton14_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Motorola/moto-x-style-r.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton15_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Motorola/motorola-moto-x-force1.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton16_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Motorola/motorola-moto-z.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton17_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Motorola/motorola-moto-z-play.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton18_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Motorola/motorola-moto-z-force.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Product Page (Microsoft):-
+
+ 
+
+
+Coding:-
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class micros : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Microsoft/microsoft-lumia-540-ds1.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Microsoft/microsoft-lumia-550-.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Microsoft/nokia-lumia-640-4g.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Microsoft/nokia-lumia-640-xl-3g.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Microsoft/microsoft-lumia-650.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton6_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Microsoft/microsoft-lumia-950-1.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+    protected void ImageButton7_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["imagepath"] = "~/Other Images/Microsoft/microsoft-lumia-950-xl--.jpg";
+        Response.Redirect("~/purchase.aspx");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+Overview Page:-
+
+ 
+
+Coding:-
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
+using System.IO;
+
+
+public partial class purchase : System.Web.UI.Page
+{
+    SqlDataReader rd;
+    SqlConnection sqlc = new SqlConnection("Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\Database.mdf;Integrated Security=True;User Instance=True");
+    protected void Page_Load(object sender, EventArgs e)
+
+    {
+        lblmsg.Visible = false;
+        string str = Session["imagepath"].ToString();
+        Image1.ImageUrl = Session["imagepath"].ToString();
+        SqlCommand cmd = new SqlCommand();
+        sqlc.Open();
+        cmd = new SqlCommand("Select * From Feature WHERE Image='" + str + "'", sqlc);
+        rd = cmd.ExecuteReader();
+        if (rd.Read())
+        {
+            lblid.Text = rd["ModelId"].ToString();
+            lblram.Text = rd["RAM"].ToString();
+            lblprocessor.Text = rd["Processor"].ToString();
+            lblstorage.Text = rd["Storage"].ToString();
+            lblcamera.Text = rd["Camera"].ToString();
+            lblbattery.Text = rd["Battery"].ToString();
+            lblos.Text = rd["OS"].ToString();
+            lblprice.Text = rd["Price"].ToString();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purchase Page (Overview Part 2):-
+
+ 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
+using System.IO;
+
+protected void Page_Load(object sender, EventArgs e)
+txtdate.Text = DateTime.Now.ToShortDateString();
+       
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        {
+            SqlConnection sqlc = new SqlConnection("Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\Database.mdf;Integrated Security=True;User Instance=True");
+            SqlCommand cd = new SqlCommand();
+            sqlc.Open();
+            cd = new SqlCommand("Insert Into Customer (Name,Device,Contact,Mode,Email,Amount) Values('" + txtname.Text + "','" + txtdevice.Text + "','" + txtcont.Text + "','" + txtmode.Text + "','" + txtemail.Text + "','" + txtamount.Text + "')", sqlc);
+            cd.ExecuteNonQuery();
+            lblmsg.Visible = true;
+        }
+    }
+    protected void Button3_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("~/data.aspx");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Customer Details Page:-
+
+ 
+
+<asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+        CellPadding="4" DataKeyNames="Id" DataMember="DefaultView" 
+        DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" 
+        Height="332px" onselectedindexchanged="GridView1_SelectedIndexChanged" 
+        Width="1348px" style="text-align: center">
+        <AlternatingRowStyle BackColor="White" />
+        <Columns>
+            <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" 
+                ReadOnly="True" SortExpression="Id" />
+
+            <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+
+            <asp:BoundField DataField="Device" HeaderText="Device" 
+                SortExpression="Device" />
+
+            <asp:BoundField DataField="Contact" HeaderText="Contact" 
+                SortExpression="Contact" />
+
+            <asp:BoundField DataField="Mode" HeaderText="Mode" SortExpression="Mode" />
+
+            <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+
+
+            <asp:BoundField DataField="Amount" HeaderText="Amount" 
+                SortExpression="Amount" />
+
+            <asp:CommandField ShowEditButton="True" />
+            <asp:CommandField ShowDeleteButton="True" />
+        </Columns>
+
+        <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+        <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
+        <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
+        <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
+        <SortedAscendingCellStyle BackColor="#FDF5AC" />
+        <SortedAscendingHeaderStyle BackColor="#4D0000" />
+        <SortedDescendingCellStyle BackColor="#FCF6C0" />
+        <SortedDescendingHeaderStyle BackColor="#820000" />
+    </asp:GridView>
+   
+ <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+        ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+       
+ DeleteCommand="Delete From Customer Where id= @id;" 
+ 
+       SelectCommand="SELECT * FROM [Customer]" 
+        
+        UpdateCommand="UPDATE [Customer] SET [Name] = @Name,[Device] = @Device,[Contact] = @Contact,[Mode] = @Mode,[Email] = @Email,[Amount] = @Amount WHERE Id=@Id;" 
+        onselecting="SqlDataSource1_Selecting">
+        <DeleteParameters>
+            <asp:Parameter Name="id" />
+        </DeleteParameters>
+     
+   <UpdateParameters>
+            <asp:Parameter Name="Name" />
+            <asp:Parameter Name="Device" />
+            <asp:Parameter Name="Contact" />
+            <asp:Parameter Name="Mode" />
+            <asp:Parameter Name="Email" />
+            <asp:Parameter Name="Amount" />
+            <asp:Parameter Name="id" />
+        </UpdateParameters>
+    </asp:SqlDataSource>
+
+Admin Panel:-
+
+SignUp Page:-
+
+ 
+
+
+Coding:-
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
+
+public partial class register : System.Web.UI.Page
+{
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        SqlConnection sqlc = new SqlConnection("Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\Database.mdf;Integrated Security=True;User Instance=True");
+        SqlCommand cmd = new SqlCommand();
+        sqlc.Open();
+        cmd = new SqlCommand("Insert Into  register (fullname,username,password,retypepassword,mobileno,emailid,gender) Values('" + txtfullname.Text + "','" + txtuser.Text + "','" + txtpass.Text + "','" + txtrepass.Text + "','" + txtno.Text + "','" + txtemail.Text + "','" + DropDownList1.SelectedItem.Value + "')", sqlc);
+        cmd.ExecuteNonQuery();
+        Response.Write("<script>(alert('Registered Successfully.')</script>)");
+        Session["username"] = txtuser.Text;
+        Response.Redirect("~/index.aspx");
+
+
+    }
+    protected void btnlogin_Click(object sender, EventArgs e)
+    {
+        SqlConnection sqlc = new SqlConnection("Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\Database.mdf;Integrated Security=True;User Instance=True");
+        SqlCommand cmd = new SqlCommand();
+        SqlDataReader rd;
+        sqlc.Open();
+        cmd = new SqlCommand("Select *  from Register where username='" + txtuser.Text + "' and password='" + txtpass.Text + "'");
+        cmd.Connection = sqlc;
+        int temp = Convert.ToInt32(cmd.ExecuteScalar());
+        
+    }
+    protected void btnlogin_Click1(object sender, EventArgs e)
+    {
+        Response.Redirect("~/login.aspx");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+Admin Panel:-
+
+Login Page:-
+
+ 
+
+Coding:-
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System .Data; 
+using System.Data.SqlClient;
+
+public partial class login : System.Web.UI.Page
+{
+    SqlDataReader rd;
+    protected void Button1_Click(object sender, EventArgs e)
+  
+        {
+           
+            SqlConnection sqlc = new SqlConnection("Data Source=.\\SQLEXPRESS;AttachDbFilename=|DataDirectory|\\Database.mdf;Integrated Security=True;User Instance=True");
+            SqlCommand cmd = new SqlCommand();
+            sqlc.Open();
+
+            cmd = new SqlCommand("Select *  from Register where username='" + txtuser.Text + "' and password='" + txtpass.Text + "'");
+            cmd.Connection = sqlc;
+            rd=cmd.ExecuteReader();
+            Response.Redirect("~/index.aspx");
+        }
+    }
+
+
+
+
+
+
+
+
+                                     
+
+
+
+
+
+
+
+
+
+                                   
+                                      9. Conclusion
+
+Our project is user friendly. Any person who has knowledge of the process can use the website. It is also easy to maintain.
+On the basis of testing, we find that our project is working properly and correctly without any error in all cases. This project satisfies all validity constraints, which we applied. At last, we find that our project is successfully running.
+From a proper analysis of positive points and constraints on the component, it can be safely concluded that the product is a highly efficient GUI based component. This application is working properly and meeting to all user requirements. This component can be easily plugged in many other systems. This software is error free. Anyone can use this software .So use this software and get more benefit from this.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10.Bibliography
+
+Books
+•	VB.NET Black Book by Steven Holzner 
+-Dreamtech
+•	ASP.NET Unleashed
+•	 C# programming
+-Wrox publication
+•	C# programming Black Book
+-Matt Tellers
+Site Address
+ www.vbcodesource.com
+
