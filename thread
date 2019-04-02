@@ -291,3 +291,72 @@ namespace Question_Paper_Generator
         }
     }
 }
+
+
+====================================================================================================================================
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace WebApplication3
+{
+    public partial class Login : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void LoginBT_Click(object sender, EventArgs e)
+        {
+
+            SqlConnection con = new SqlConnection(@"Data Source=(localdb)\v11.0;Initial Catalog=QPGdb;Integrated Security=True;Pooling=False");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select * from userdetails where userid = @username and password = @password;", con);
+
+            cmd.Parameters.AddWithValue("@username", empidTB.Text);
+            cmd.Parameters.AddWithValue("@password", passwordTB.Text);
+            cmd.Connection = con;
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            if (dt.Rows.Count > 0)
+            {
+                //Response.Write("ho gaya");
+                Session.Add("Userid", empidTB.Text);
+                Response.Redirect("~/index.aspx");
+            }
+            else
+            {
+               // Response.Write("nhe ho gaya");
+             
+                myMessage("Invalid User Details!!!!");
+                empidTB.Text = "";
+                passwordTB.Text = "";
+                
+            }
+       
+        }
+        public void myMessage(string msg)
+        {
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            sb.Append("<script type = 'text/javascript'>");
+            sb.Append("window.onload = function(){");
+            sb.Append("alert('");
+            sb.Append(msg);
+            sb.Append("')};");
+            sb.Append("</script>");
+            ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
+        }
+
+
+
+    }
+}
